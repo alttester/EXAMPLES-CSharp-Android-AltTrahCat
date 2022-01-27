@@ -2,7 +2,7 @@ echo "==> Uninstalling the app from the device..."
 adb uninstall com.Altom.TrashCat
 
 echo "==> Installing the app on the device..."
-adb install android/TrashCat-Android.apk
+adb install android/TrashCat.apk
 
 echo "==> Setup ADB port forwarding..."
 adb forward --remove-all 
@@ -21,5 +21,5 @@ echo "==> Restore test project and run tests"
 dotnet test -- xunit.parallelizeAssembly=false
 
 echo "==> Kill app"
-taskkill //PID $(tasklist | grep TrashCat-Android.exe | awk '{print $2}') //T //F
-
+# taskkill //PID $(tasklist | grep TrashCat.apk | awk '{print $2}') //T //F
+# taskkill //PID TrashCat.apk //F
