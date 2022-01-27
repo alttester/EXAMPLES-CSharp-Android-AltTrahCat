@@ -12,13 +12,13 @@ namespace alttrashcat_tests_csharp.tests
         private AltUnityDriver altUnityDriver;
         private MainMenuPage mainMenuPage;
         private StartPage startPage;
-       public StartPageTests(){
+       [SetUp]
+       public void Setup(){
             AltUnityPortForwarding.ForwardAndroid();
             altUnityDriver=new AltUnityDriver();
             startPage=new StartPage(altUnityDriver);
             startPage.Load();
             mainMenuPage=new MainMenuPage(altUnityDriver);
-
         }
         [Test]
         public void TestStartPageLoadedCorrectly(){
@@ -30,6 +30,7 @@ namespace alttrashcat_tests_csharp.tests
             Assert.True(mainMenuPage.IsDisplayed());
         }
 
+        [TearDown]
         public void Dispose()
         {
             altUnityDriver.Stop();
