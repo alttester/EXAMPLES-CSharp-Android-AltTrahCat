@@ -13,9 +13,10 @@ namespace alttrashcat_tests_csharp.tests
         GamePlay gamePlayPage;
         PauseOverlayPage pauseOverlayPage;
         GetAnotherChancePage getAnotherChancePage;
-        public GamePlayTests()
+        [SetUp]
+        public void Setup()
         {
-
+            AltUnityPortForwarding.ForwardAndroid();
             altUnityDriver=new AltUnityDriver();
             mainMenuPage=new MainMenuPage(altUnityDriver);
             mainMenuPage.LoadScene();
@@ -62,9 +63,11 @@ namespace alttrashcat_tests_csharp.tests
             Assert.True(getAnotherChancePage.IsDisplayed());
         }
 
+        [TearDown]
         public void Dispose()
         {
             altUnityDriver.Stop();
+            AltUnityPortForwarding.RemoveForwardAndroid();
             Thread.Sleep(1000);
         }
     }

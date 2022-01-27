@@ -9,9 +9,10 @@ namespace alttrashcat_tests_csharp.tests
     {
         AltUnityDriver altUnityDriver;
         MainMenuPage mainMenuPage;
-        [OneTimeSetUp]
+        [SetUp]
         public void SetUp()
         {
+            AltUnityPortForwarding.ForwardAndroid();
             altUnityDriver = new AltUnityDriver(port: 13000);
             mainMenuPage = new MainMenuPage(altUnityDriver);
             mainMenuPage.LoadScene();
@@ -19,21 +20,15 @@ namespace alttrashcat_tests_csharp.tests
 
         }
 
-        [OneTimeTearDown]
+        [TearDown]
         public void Dispose()
         {
             altUnityDriver.Stop();
+            AltUnityPortForwarding.RemoveForwardAndroid();
             Thread.Sleep(1000);
         }
-        // public MainMenuTests()
-        // {
-        //     altUnityDriver = new AltUnityDriver();
-        //     mainMenuPage = new MainMenuPage(altUnityDriver);
-        //     mainMenuPage.LoadScene();
+      
 
-        // }
-
-            
         [Test]
         public void TestMainMenuPageLoadedCorrectly(){
             Assert.True(mainMenuPage.IsDisplayed());
