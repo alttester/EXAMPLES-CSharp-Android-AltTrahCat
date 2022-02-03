@@ -18,8 +18,7 @@ sleep 5
 cd TestAlttrashCSharp
 
 echo "==> Restore test project and run tests"
-dotnet test -- xunit.parallelizeAssembly=false
+dotnet test 
 
 echo "==> Kill app"
-# taskkill //PID $(tasklist | grep TrashCat.apk | awk '{print $2}') //T //F
-# taskkill //PID TrashCat.apk //F
+adb shell am force-stop com.Altom.TrashCat

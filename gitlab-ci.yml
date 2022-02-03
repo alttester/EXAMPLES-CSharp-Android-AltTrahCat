@@ -1,0 +1,17 @@
+stages:
+  - test
+
+run-android-csharp-tests-on-windows:
+  stage: test
+  rules:
+    - when: always
+  tags:
+    - android
+    - mac
+  script:
+    - sh start_tests_android.sh
+  artifacts:
+    when: always
+    expire_in: 10 days
+    paths: 
+      - AltUnityTesterLog.txt
