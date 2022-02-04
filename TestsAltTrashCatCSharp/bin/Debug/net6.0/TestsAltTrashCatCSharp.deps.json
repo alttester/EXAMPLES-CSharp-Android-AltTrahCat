@@ -6,7 +6,7 @@
   "compilationOptions": {},
   "targets": {
     ".NETCoreApp,Version=v6.0": {
-      "android-csharp/1.0.0": {
+      "TestsAltTrashCatCSharp/1.0.0": {
         "dependencies": {
           "AltUnityDriver": "1.7.0",
           "Microsoft.NET.Test.Sdk": "16.11.0",
@@ -15,7 +15,7 @@
           "coverlet.collector": "3.1.0"
         },
         "runtime": {
-          "android-csharp.dll": {}
+          "TestsAltTrashCatCSharp.dll": {}
         }
       },
       "AltUnityDriver/1.7.0": {
@@ -349,7 +349,7 @@
     }
   },
   "libraries": {
-    "android-csharp/1.0.0": {
+    "TestsAltTrashCatCSharp/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\andra.cardas\\Desktop\\android-c#-example\\android-csharp\\android-csharp.csproj": {}
+    "C:\\Users\\andra.cardas\\Desktop\\android-c#-example\\android-build-with-csharp-tests\\TestsAltTrashCatCSharp\\TestsAltTrashCatCSharp.csproj": {}
   },
   "projects": {
-    "C:\\Users\\andra.cardas\\Desktop\\android-c#-example\\android-csharp\\android-csharp.csproj": {
+    "C:\\Users\\andra.cardas\\Desktop\\android-c#-example\\android-build-with-csharp-tests\\TestsAltTrashCatCSharp\\TestsAltTrashCatCSharp.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\andra.cardas\\Desktop\\android-c#-example\\android-csharp\\android-csharp.csproj",
-        "projectName": "android-csharp",
-        "projectPath": "C:\\Users\\andra.cardas\\Desktop\\android-c#-example\\android-csharp\\android-csharp.csproj",
+        "projectUniqueName": "C:\\Users\\andra.cardas\\Desktop\\android-c#-example\\android-build-with-csharp-tests\\TestsAltTrashCatCSharp\\TestsAltTrashCatCSharp.csproj",
+        "projectName": "TestsAltTrashCatCSharp",
+        "projectPath": "C:\\Users\\andra.cardas\\Desktop\\android-c#-example\\android-build-with-csharp-tests\\TestsAltTrashCatCSharp\\TestsAltTrashCatCSharp.csproj",
         "packagesPath": "C:\\Users\\andra.cardas\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\andra.cardas\\Desktop\\android-c#-example\\android-csharp\\obj\\",
+        "outputPath": "C:\\Users\\andra.cardas\\Desktop\\android-c#-example\\android-build-with-csharp-tests\\TestsAltTrashCatCSharp\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\andra.cardas\\AppData\\Roaming\\NuGet\\NuGet.Config"

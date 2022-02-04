@@ -15,7 +15,7 @@ adb shell am start -n com.Altom.TrashCat/com.unity3d.player.UnityPlayerActivity
 
 echo "==> Wait for app to start"
 sleep 5
-cd TestAlttrashCSharp
+cd TestsAltTrashCatCSharp
 
 echo "==> Restore test project and run tests"
 dotnet test 

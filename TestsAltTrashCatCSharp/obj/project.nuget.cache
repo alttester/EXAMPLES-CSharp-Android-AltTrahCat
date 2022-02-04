@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "AIZb9yHVxqfP4gMIjPje8L2BL8/ZbuWnaPeki3eAPGIJ886OuY+5rv01jrr+S/rhERrsnSW4rvf1gLm0IGyEqQ==",
+  "dgSpecHash": "4V2f0RIdxPk/bTm2GTWH35Vnk8pwFkYMhEvzp+SnSDNiN+/XJ7AAYWGMVet5zZQ9wrJk0iMtrQvt/L5s4Lmd4Q==",
   "success": true,
-  "projectFilePath": "C:\\Users\\andra.cardas\\Desktop\\android-c#-example\\android-csharp\\android-csharp.csproj",
+  "projectFilePath": "C:\\Users\\andra.cardas\\Desktop\\android-c#-example\\android-build-with-csharp-tests\\TestsAltTrashCatCSharp\\TestsAltTrashCatCSharp.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\andra.cardas\\.nuget\\packages\\altunitydriver\\1.7.0\\altunitydriver.1.7.0.nupkg.sha512",
     "C:\\Users\\andra.cardas\\.nuget\\packages\\coverlet.collector\\3.1.0\\coverlet.collector.3.1.0.nupkg.sha512",
