@@ -17,14 +17,13 @@
           "C:\\Users\\andra.cardas\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
-          "net6.0"
+          "netcoreapp3.1"
         ],
         "sources": {
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
-          "net6.0": {
-            "targetAlias": "net6.0",
+          "netcoreapp3.1": {
             "projectReferences": {}
           }
         },
@@ -35,8 +34,7 @@
         }
       },
       "frameworks": {
-        "net6.0": {
-          "targetAlias": "net6.0",
+        "netcoreapp3.1": {
           "dependencies": {
             "AltUnityDriver": {
               "target": "Package",
@@ -44,19 +42,15 @@
             },
             "Microsoft.NET.Test.Sdk": {
               "target": "Package",
-              "version": "[16.11.0, )"
+              "version": "[16.5.0, )"
             },
             "NUnit": {
               "target": "Package",
-              "version": "[3.13.2, )"
+              "version": "[3.12.0, )"
             },
             "NUnit3TestAdapter": {
               "target": "Package",
-              "version": "[4.0.0, )"
-            },
-            "coverlet.collector": {
-              "target": "Package",
-              "version": "[3.1.0, )"
+              "version": "[3.16.1, )"
             }
           },
           "imports": [
@@ -74,7 +68,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.100\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.408\\RuntimeIdentifierGraph.json"
         }
       }
     }
