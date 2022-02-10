@@ -6,8 +6,8 @@ https://assetstore.unity.com/packages/essentials/tutorial-projects/endless-runne
 ### Running the tests on Android
 The tests are meant to be run on an Adroid device. The app is provided in this repository, under the app/ folder.
 To start the tests, depending of your OS run:
-`./start_tests_android.sh`
-
+ - ./run_tests_mac.sh on MacOS/Linux
+ - ./run_tests_windows.sh on Windows
 
 This script will:
 
