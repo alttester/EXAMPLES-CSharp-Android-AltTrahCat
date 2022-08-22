@@ -16,6 +16,7 @@ namespace alttrashcat_tests_csharp.tests
         [SetUp]
         public void Setup()
         {
+            
             AltUnityPortForwarding.ForwardAndroid();
             altUnityDriver=new AltUnityDriver();
             mainMenuPage=new MainMenuPage(altUnityDriver);
