@@ -1,0 +1,8 @@
+{
+  "runtimeOptions": {
+    "additionalProbingPaths": [
+      "C:\\Users\\andra.cardas\\.dotnet\\store\\|arch|\\|tfm|",
+      "C:\\Users\\andra.cardas\\.nuget\\packages"
+    ]
+  }
+}
