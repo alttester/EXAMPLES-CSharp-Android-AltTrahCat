@@ -1,14 +1,14 @@
-using  alttrashcat_tests_csharp.pages;
 using System;
 using System.Threading;
-using Altom.AltUnityDriver;
+using Altom.AltDriver;
+using alttrashcat_tests_csharp.pages;
 using NUnit.Framework;
 
 namespace alttrashcat_tests_csharp.tests
 {
     public class GamePlayTests
     {
-        AltUnityDriver altUnityDriver;
+        AltDriver altDriver;
         MainMenuPage mainMenuPage;
         GamePlay gamePlayPage;
         PauseOverlayPage pauseOverlayPage;
@@ -16,48 +16,56 @@ namespace alttrashcat_tests_csharp.tests
         [SetUp]
         public void Setup()
         {
-            AltUnityPortForwarding.ForwardAndroid();
-            altUnityDriver=new AltUnityDriver();
-            mainMenuPage=new MainMenuPage(altUnityDriver);
+
+            altDriver = new AltDriver();
+            mainMenuPage = new MainMenuPage(altDriver);
             mainMenuPage.LoadScene();
             mainMenuPage.PressRun();
-            gamePlayPage=new GamePlay(altUnityDriver);
-            pauseOverlayPage=new PauseOverlayPage(altUnityDriver);
-            getAnotherChancePage=new GetAnotherChancePage(altUnityDriver);
+            gamePlayPage = new GamePlay(altDriver);
+            pauseOverlayPage = new PauseOverlayPage(altDriver);
+            getAnotherChancePage = new GetAnotherChancePage(altDriver);
 
         }
         [Test]
-        public void TestGamePlayDisplayedCorrectly(){
+        public void TestGamePlayDisplayedCorrectly()
+        {
             Assert.True(gamePlayPage.IsDisplayed());
         }
         [Test]
-        public void TestGameCanBePausedAndResumed(){
+        public void TestGameCanBePausedAndResumed()
+        {
             gamePlayPage.PressPause();
             Assert.True(pauseOverlayPage.IsDisplayed());
             pauseOverlayPage.PressResume();
             Assert.True(gamePlayPage.IsDisplayed());
         }
         [Test]
-        public void TestGameCanBePausedAndStopped(){
+        public void TestGameCanBePausedAndStopped()
+        {
             gamePlayPage.PressPause();
             pauseOverlayPage.PressMainMenu();
             Assert.True(mainMenuPage.IsDisplayed());
         }
         [Test]
-        public void TestAvoidingObstacles(){
-            gamePlayPage.AvoidObstacles(3);
-            Assert.True(gamePlayPage.GetCurrentLife()>0);
+        public void TestAvoidingObstacles()
+        {
+            gamePlayPage.AvoidObstacles(10);
+            Assert.True(gamePlayPage.GetCurrentLife() > 0);
         }
         [Test]
-        public void TestPlayerDiesWhenObstacleNotAvoided(){
-            float timeout=20;
-            while(timeout>0){
-                try{
+        public void TestPlayerDiesWhenObstacleNotAvoided()
+        {
+            float timeout = 20;
+            while (timeout > 0)
+            {
+                try
+                {
                     getAnotherChancePage.IsDisplayed();
                     break;
                 }
-                catch (Exception){
-                    timeout-=1;
+                catch (Exception)
+                {
+                    timeout -= 1;
                 }
             }
             Assert.True(getAnotherChancePage.IsDisplayed());
@@ -66,9 +74,8 @@ namespace alttrashcat_tests_csharp.tests
         [TearDown]
         public void Dispose()
         {
-            altUnityDriver.Stop();
-            AltUnityPortForwarding.RemoveForwardAndroid();
-            Thread.Sleep(1000);
+            altDriver.Stop();
+            Thread.Sleep(100);
         }
     }
 }
