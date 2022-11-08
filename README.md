@@ -1,6 +1,6 @@
 # Android Build with CSharp Tests
 
-This repository shows a few C# tests that use the page object model and AltTester to test the Unity endless runner sample:
+This repository shows a few C# tests that use the page object model and AltTester Unity SDK to test the Unity endless runner sample:
 https://assetstore.unity.com/packages/essentials/tutorial-projects/endless-runner-sample-game-87901
 
 ### Running the tests on Android
