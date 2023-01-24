@@ -1,4 +1,4 @@
-using Altom.AltDriver;
+using AltTester.AltDriver;
 
 namespace alttrashcat_tests_csharp.pages
 {

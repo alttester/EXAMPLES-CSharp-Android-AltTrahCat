@@ -1,5 +1,5 @@
-using Altom.AltDriver;
 using System;
+using AltTester.AltDriver;
 
 namespace alttrashcat_tests_csharp.pages
 {
@@ -29,27 +29,27 @@ namespace alttrashcat_tests_csharp.pages
             return Character.GetComponentProperty<int>("CharacterInputController", "currentLife", "Assembly-CSharp");
         }
         public void Jump(AltObject character)
-            {
-                character.CallComponentMethod<string>("CharacterInputController", "Jump", "Assembly-CSharp", new object[]{});
-            }
+        {
+            character.CallComponentMethod<string>("CharacterInputController", "Jump", "Assembly-CSharp", new object[] { });
+        }
         public void Slide(AltObject character)
-            {
-                character.CallComponentMethod<string>("CharacterInputController", "Slide", "Assembly-CSharp", new object[]{});
-            }        
+        {
+            character.CallComponentMethod<string>("CharacterInputController", "Slide", "Assembly-CSharp", new object[] { });
+        }
         public void MoveRight(AltObject character)
-        { 
-            character.CallComponentMethod<string>("CharacterInputController", "ChangeLane", "Assembly-CSharp", new string[]{"1"});
+        {
+            character.CallComponentMethod<string>("CharacterInputController", "ChangeLane", "Assembly-CSharp", new string[] { "1" });
         }
         public void MoveLeft(AltObject character)
-        { 
-            character.CallComponentMethod<string>("CharacterInputController", "ChangeLane", "Assembly-CSharp", new string[]{"-1"});
+        {
+            character.CallComponentMethod<string>("CharacterInputController", "ChangeLane", "Assembly-CSharp", new string[] { "-1" });
         }
         public void AvoidObstacles(int numberOfObstacles)
         {
             var character = Character;
             bool movedLeft = false;
             bool movedRight = false;
-            character.CallComponentMethod<string>("CharacterInputController", "CheatInvincible",  "Assembly-CSharp", new string[]{"true"});
+            character.CallComponentMethod<string>("CharacterInputController", "CheatInvincible", "Assembly-CSharp", new string[] { "true" });
             for (int i = 0; i < numberOfObstacles; i++)
             {
                 var allObstacles = Driver.FindObjectsWhichContain(By.NAME, "Obstacle");
@@ -133,9 +133,9 @@ namespace alttrashcat_tests_csharp.pages
                     MoveRight(character);
                     movedRight = false;
                 }
-                
+
             }
-            character.CallComponentMethod<string>("CharacterInputController", "CheatInvincible",  "Assembly-CSharp", new string[]{"false"});
+            character.CallComponentMethod<string>("CharacterInputController", "CheatInvincible", "Assembly-CSharp", new string[] { "false" });
         }
     }
 }
