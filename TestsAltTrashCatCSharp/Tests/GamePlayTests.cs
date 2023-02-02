@@ -1,6 +1,6 @@
 using System;
 using System.Threading;
-using AltTester.AltDriver;
+using Altom.AltDriver;
 using alttrashcat_tests_csharp.pages;
 using NUnit.Framework;
 
