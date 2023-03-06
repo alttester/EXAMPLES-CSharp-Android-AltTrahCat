@@ -9,7 +9,7 @@ namespace alttrashcat_tests_csharp.pages
         {
         }
 
-        public AltObject PauseButton { get => Driver.WaitForObject(By.NAME, "Game/WholeUI/pauseButton", timeout: 2); }
+        public AltObject PauseButton { get => Driver.WaitForObject(By.NAME, "pauseButton", timeout: 2); }
         public AltObject Character { get => Driver.WaitForObject(By.NAME, "PlayerPivot"); }
 
         public bool IsDisplayed()
