@@ -8,9 +8,9 @@ namespace alttrashcat_tests_csharp.pages
         {
         }
 
-        public AltObject GameOverButton { get => Driver.WaitForObject(By.NAME, "Game/DeathPopup/GameOver", timeout: 2); }
-        public AltObject PremiumButton { get => Driver.WaitForObject(By.NAME, "Game/DeathPopup/ButtonLayout/Premium Button", timeout: 2); }
-        public AltObject AvailableCurrency { get => Driver.WaitForObject(By.NAME, "Game/DeathPopup/PremiumDisplay/PremiumOwnCount", timeout: 2); }
+        public AltObject GameOverButton { get => Driver.WaitForObject(By.NAME, "GameOver", timeout: 2); }
+        public AltObject PremiumButton { get => Driver.WaitForObject(By.NAME, "Premium Button", timeout: 2); }
+        public AltObject AvailableCurrency { get => Driver.WaitForObject(By.NAME, "PremiumOwnCount", timeout: 2); }
 
         public bool IsDisplayed()
         {
