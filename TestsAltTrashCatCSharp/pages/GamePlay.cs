@@ -1,5 +1,5 @@
 using System;
-using AltTester.AltDriver;
+using AltTester.AltTesterUnitySDK.Driver;
 
 namespace alttrashcat_tests_csharp.pages
 {
