@@ -6,7 +6,7 @@ https://assetstore.unity.com/packages/essentials/tutorial-projects/endless-runne
 ### Running the tests on Android
 The tests are meant to be run on an Adroid device. Create a folder app under project
 
-The app is provided at https://altom.com/app/uploads/AltTester/TrashCat/TrashCatAndroid.zip and needs to be included unzipped under the app/ folder.
+The app is provided at https://alttester.com/app/uploads/AltTester/TrashCat/TrashCatAndroid2_0_1.zip and needs to be included unzipped under the app/ folder.
 
 To start the tests, depending of your OS run:
  - ./run_tests_mac.sh on MacOS/Linux
