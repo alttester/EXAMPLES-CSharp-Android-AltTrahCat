@@ -5,6 +5,7 @@ https://assetstore.unity.com/packages/essentials/tutorial-projects/endless-runne
 
 ### Running the tests on Android
 
+❗ Starting with version 2.0.0, the AltTester Desktop must be running on your PC while the tests are running.
 1. Install the [AltTesterDesktop](https://alttester.com/alttester/#pricing), then open it (you need to accept the Terms and Conditions if the AltTester is opened for the first time).
 2. The tests are meant to be run on an Adroid device. Create a folder `app` under project. The app is provided at https://alttester.com/app/uploads/AltTester/TrashCat/TrashCatAndroid2_0_1.zip and needs to be included unzipped under the `app/` folder.
 3. To start the tests, depending on your OS run:
