@@ -4,9 +4,9 @@ adb uninstall com.Altom.TrashCat
 echo "==> Installing the app on the device..."
 adb install app/TrashCat.apk
 
-echo "==> Setup ADB port forwarding..."
-adb forward --remove-all 
-adb forward tcp:13000 tcp:13000
+echo "==> Setup ADB reverse port forwarding..."
+adb reverse --remove-all 
+adb reverse tcp:13000 tcp:13000
 
 echo " Start the app "
 
@@ -22,3 +22,6 @@ dotnet test  -- NUnit.TestOutputXml = "TestAlttrashCSharp"
 
 echo "==> Kill app"
 adb shell am force-stop com.Altom.TrashCat
+
+echo "remove reverse ports"
+adb reverse --remove-all

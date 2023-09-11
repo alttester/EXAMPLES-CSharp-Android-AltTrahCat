@@ -4,7 +4,7 @@ adb uninstall com.Altom.TrashCat
 echo "==> Installing the app on the device..."
 adb install app/TrashCat.apk
 
-echo "==> Setup ADB port forwarding..."
+echo "==> Setup ADB reverse port forwarding..."
 adb reverse --remove-all 
 adb reverse tcp:13000 tcp:13000
 
